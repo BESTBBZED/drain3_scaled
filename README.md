@@ -13,18 +13,10 @@ This project is based on **Drain3** by [LogPAI](https://github.com/logpai/Drain3
 
 The following changes were made to adapt Drain3 for production use in a multi-parser log analysis system:
 
-### DIST-7514: Micro refactor for CBD3 adaptation
-- Refactored source code structure to integrate with the CBD3 platform
-
-### DIST-7587: Store trace level for event templates
+- Refactored source code structure for multi-parser integration
 - Extended template storage to persist trace/severity level alongside each mined template
-
-### DIST-8270: Remove hardcoded field names
 - Generalized functions that previously assumed specific field names, making the parser configurable for different log formats
-
-### Additional changes
 - Added `pyproject.toml` for modern Python packaging
-- Added `LICENSE.txt`
 - Extended `persistence_handler.py` with additional persistence capabilities
 - Enhanced `template_miner.py` with production-scale improvements
 
